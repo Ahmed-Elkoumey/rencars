@@ -1,0 +1,56 @@
+<section class="container-fluid mb-5">
+<div class="row justify-content-center">
+
+    <!-- search -->
+    <div class="col-md-9 mb-5">
+        <div class="row justify-content-center cars-search p-3 ">
+    
+            <div class="col-md-8 cars-search_holder">
+                <img src="assets/imgs/location.png" alt="">
+                <input type="text" placeholder=" Search By Name" [formControl]="searchControl" class="form-control cars-search_inp" name="" id="">
+            </div>
+            <div class="col-md-2">
+                <button class="btn bgRC-primary btn-primary-lagre">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- search -->
+
+
+    <!-- section title -->
+    <div class="col-12 d-flex justify-content-center mb-5">
+        <div class="sect-title ">
+            <div class="title-border bgRC-secondary">
+                <h2 class="title-text">POPULAR RENTAL DEALS</h2>
+            </div>
+            <p class="title-desc">Most popular cars rental deals</p>
+        </div>
+    </div>
+    <!-- section title -->
+
+
+    <!-- cars card -->
+    <div class="container  mb-5">
+        <div class="row">
+           
+            @for (car of carsList; track $index ) {
+
+                <div class="col-md-3 mb-3">
+                    <app-car-card [carProps]="car"/>
+                </div>
+            }@empty {
+                <h3 class="text-center text-danger">No Cars Found</h3>
+            }
+           
+        </div>
+    </div>
+    <!-- cars card -->
+
+    <!-- view All -->
+    <div class="col-md-3">
+        <button routerLink="cars" routerLinkActive="router-link-active"   class="btn btn-outline-secondary fs-4 w-100">Show All Vehicles <fa-icon [icon]="faRight"/> </button>
+    </div>
+    <!-- view All -->
+
+</div>
+</section>

@@ -1,0 +1,42 @@
+<div class="car-card text-center w-75 m-auto">
+    <div class="car-card-header">
+        <img [src]="carProps.image" class=" car-card-img " alt="...">
+    </div>
+    <div class="car-card-body">
+        <h5 class="car-card-title ">{{carProps?.make}} {{ carProps?.model }} {{ carProps?.year }}</h5>
+        <div class="d-flex">
+            <fa-icon [icon]="star" class="text-warning me-2" />
+            <p>
+                4.8 <span class="text-car-mute fs-6">({{randNum}} reviews)</span>
+            </p>
+        </div>
+
+        <div class="row car-porps border-bottom mb-3">
+            <!-- row -->
+            @for (featur of carProps.features; track $index) {
+                <div class="col-md-6 d-flex align-items-center ">
+                    <fa-icon [icon]="faCar" class="text-secondary me-1" />
+                    <span class="text-car-mute">{{featur}}</span>
+                </div>
+            }
+            <!-- row -->
+
+        </div>
+
+        <div class="car-price row mb-1">
+            <div class="col-md-6">
+
+                <span class="text-dark">Price</span>
+            </div>
+
+            <div class="col-md-6">
+
+                <span class="text-dark">{{carProps.price | currency}}
+
+                </span>
+            </div>
+
+        </div>
+        <button  class="btn bgRC-primary w-100">Rent Now <fa-icon [icon]="right"/> </button>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+.car-card {
+    box-shadow: 0px 12px 24px 0px rgba(16, 76, 139, 0.16);
+    width: 256px;
+    border-radius: 10px;
+    // height: 405px;
+
+
+    &-img {
+        width: 75%;
+        height: 85%;
+        // height: 104px;
+        object-fit: contain;
+    }
+
+    &-header {
+        width: 100%;
+        height: 155px;
+        border-radius: 16px;
+        border: 0px 0px 1px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-body {
+        width: Hug (256px)px;
+        height: Hug (250px)px;
+        padding: 0px 24px 24px 24px;
+        .car-card-title {
+            // font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 17px;
+            text-align: left;
+        }
+        .text-car-mute{
+            color: #b8b2b2;
+            font-size: 12px;
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+.cars-search{
+    box-shadow: 0px 6px 12px 0px rgba(19, 94, 172, 0.12);
+border-radius: 8px;
+
+.cars-search_holder{
+    position: relative;
+    img{
+        position: absolute;
+        top: 3px;
+        left: -20px;
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+    }
+}
+    &search_inp{
+        position: relative;
+    }
+}

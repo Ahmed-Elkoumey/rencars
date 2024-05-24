@@ -1,1 +1,105 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+
+@import 'bootstrap/scss/bootstrap';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+// genral ruls
+body {
+    font-size: 18px;
+    // position: relative;
+}
+
+$primary-color: #1572D3;
+$secondary-color: #ECF5FF;
+
+.bgRC-primary {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.bgRC-secondary {
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.btn-primary-regular {
+    width: 159px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.btn-primary-lagre {
+    width: 208px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+
+.sect-title {
+    width: 667px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-border {
+    width: 226px;
+    // height: 42px;
+    padding:  16px  ;
+    gap: 8px;
+    border-radius: 8px;
+
+    .title-text {
+        // font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: center;
+
+    }
+}
+
+.title-desc {
+    width: 667px;
+    // height: 26px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 49.4px;
+    text-align: center;
+
+}
+
+
+
+// genral ruls
+
+/**********  HEADER   **************/
+header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/imgs/Group.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+}
+
+.audi {
+    background-image: url('assets/imgs/Vector.png');
+    // background-image: url("./media/Vector.png");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0px;
+    background-size: 70%;
+
+}
+
+/**********  HEADER   **************/
+
+/**********  POUPLAR SECTION   **************/
+
+
+/**********  POUPLAR SECTION   **************/
